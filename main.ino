@@ -1,24 +1,52 @@
-class Led{
+
+class Buzzer
+{
     int pin;
-    public:
-    Led(int pin){
+
+public:
+    Buzzer(int pin)
+    {
         this->pin = pin;
-        pinMode(this->pin,OUTPUT);
+        pinMode(this->pin, OUTPUT);
     }
 
-    void on(){
-        digitalWrite(this->pin,HIGH);
+    void on()
+    {
+        digitalWrite(this->pin, HIGH);
     }
 
-    void off(){
-        digitalWrite(this->pin,LOW);
+    void off()
+    {
+        digitalWrite(this->pin, LOW);
     }
 };
 
-void setup(){
+class Led
+{
+    int pin;
 
+public:
+    Led(int pin)
+    {
+        this->pin = pin;
+        pinMode(this->pin, OUTPUT);
+    }
+
+    void on()
+    {
+        digitalWrite(this->pin, HIGH);
+    }
+
+    void off()
+    {
+        digitalWrite(this->pin, LOW);
+    }
+};
+
+void setup()
+{
 }
 
-void loop(){
-    
+void loop()
+{
 }
